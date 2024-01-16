@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;;
+}
+
+
+.gif-ney video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+ .video-content{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.foto-ney{
+    margin-bottom:50px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("neymar.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.foto-ney::before{
+    position: absolute;
+    content: "";
+    width: 215px;
+    height: 215px;
+    z-index: -1;
+    background:linear-gradient(90deg, #ffdf00, #009c3b);
+    background-position: center;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.foto-name h1{
+    text-shadow:1px 4px 2px black;
+    position: relative;
+    font-size: 50px;
+}
+.foto-name h1::before{
+    position: absolute;
+    content: " ";
+    bottom: 3px;
+    left: 0px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    width: 60px;
+    height: 5px;
+    border-radius:4px;
+}
+.foto-name h1::after{
+    position: absolute;
+    content: " ";
+    bottom: 15px;
+    left: 222px;
+    background-image: url("verificado.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius:4px;
+}
+.lista-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1024px;
+    margin: 40px;
+}
+.lista-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    width: 600px;
+    align-items: center;
+    
+}
+.lista-links a p{
+    margin: 0 auto;
+    
+}
+.lista-links a img{
+   width:20px;
+   height: 20px;
+   justify-content: left;
+    
+}
+
+.lista-links a:hover{
+    background-color: rgba(255, 255, 255, 0.907);
+    color: black;
+    transition: 0.5s;
+  
+}
+
+
+.stats{
+   background-image: url("imagem-de-fundo.jpg");
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.stats h3{
+   font-size: 60px;
+   color: white;
+   text-shadow: 1px 5px 2px black;
+}
+
+.stats table{
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+
+.stats table thead tr th{
+   font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.608);
+}
+.stats table tbody tr td{
+    padding: 10px;
+
+}
+
+.stats table tbody tr:nth-child(odd){
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.785);
+}
+.stats table tbody tr:nth-child(even){
+    color: white;
+    background-color: rgba(0, 0, 0, 0.706);
+}
